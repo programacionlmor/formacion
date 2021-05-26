@@ -8,7 +8,7 @@
 
 
 # Nota generales:
-# condicion: se crea utilizando operadores relacionales y logicos
+# condicion: se crea utilizando operadores relacionales y lógicos
 
 
 # Ejercicio No 1
