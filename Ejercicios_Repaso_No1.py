@@ -8,7 +8,7 @@
 
 
 # Nota generales:
-# condicion: se crea utilizando operadores relacionales o de comparación y lógicos
+# condición: se crea utilizando operadores relacionales o de comparación y lógicos
 # Operadores relacionales:
 #    “==” se usa para determinar si dos valores son exactamente iguales. Ejemplo: 2 == 2    Resultado: true
 #    “!=” se usa para determinar Si dos valores son diferentes. Ejemplo: 2 != 5  Resultado:  true
@@ -16,6 +16,10 @@
 #    “<“  se usa para determinar si el valor de la izquierda es menor que el de la derecha. Ejemplo: 1 < 2  Resultado:true
 #    ">=” se usa para determinar si el valor de la izquierda es mayor o igual que el de la derecha. Ejemplo: 4 >= 2  Resultado:true
 #    "<=" se usa para determinar si el valor de la izquierda es menor o igual que el de la derecha. Ejemplo: 4 <= 6  Resultado:true
+# Operadores lógicos:
+#   "and"  :  Si y sólo si todos los elementos son True dará por resultado True. Sino False
+#   "or"   :  Si algún elemento es True dará por resultado True. Sino False
+#   "Not"  :  El operador “not” es unario, de negación por ende solo dará True si su elemento es False y viceversa.
 
 
 
