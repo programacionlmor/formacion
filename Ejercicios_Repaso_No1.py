@@ -27,9 +27,9 @@
 
 
 # Ejercicio No 1
-# Dados los tres lados de un triángulo, determine si el triángulo es equilátero, isóceles o  escaleno.
+# Dados los tres lados de un triángulo, determine si el triángulo es equilátero, isósceles o  escaleno.
 # Triángulo equilatero:  Tiene todos los lados iguales.
-# Triángulo isoceles  :  Tiene dos lados iguales y uno desigual.
+# Triángulo isósceles :  Tiene dos lados iguales y uno desigual.
 # Triángulo escaleno  :  Tiene todos los lados desiguales.
 
 
@@ -43,7 +43,7 @@
 #     print ("El triangulo es equilátero")
 # else:
 #     if  (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
-#         print ("El triángulo es isóceles ")
+#         print ("El triángulo es isósceles ")
 #     else:
 #         print ("El triángulo es escaleno")
         
@@ -58,7 +58,7 @@
 # if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #     print ("El triángulo es equilátero")
 # elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
-#      print ("El triángulo es isóceles ")
+#      print ("El triángulo es isósceles ")
 # else:
 #      print ("El triángulo es escaleno")
 
@@ -75,7 +75,7 @@
 #     if  (ladoUno == ladoDos == ladoTres):
 #         print ("El triángulo es equilátero ")
 #     else:
-#         print ("El triángulo es isóceles ")
+#         print ("El triángulo es isósceles ")
 
 # Alternativa 4
 
@@ -89,4 +89,4 @@
 # elif (ladoUno == ladoDos == ladoTres):
 #      print ("El triángulo es equilátero ")
 # else:
-#      print ("El triángulo es isóceles ")
+#      print ("El triángulo es isósceles ")
