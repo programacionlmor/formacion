@@ -39,7 +39,7 @@
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
 
-# if ((ladoUno == ladoDos) and (ladoDos == ladoTres)):
+# if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #     print (" El triangulo es equilátero")
 # else:
 #     if  (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
@@ -55,7 +55,7 @@
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
 
-# if ((ladoUno == ladoDos) and (ladoDos == ladoTres)):
+# if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #     print (" El triángulo es equilátero")
 # elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
 #      print (" El triángulo es isóceles ")
@@ -69,7 +69,7 @@
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
 
-# if ((ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres)):
+# if (ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres):
 #     print (" El triángulo es escaleno")
 # else:
 #     if  (ladoUno == ladoDos == ladoTres):
@@ -84,7 +84,7 @@
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
 
-# if ((ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres)):
+# if (ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres):
 #     print (" El triángulo es escaleno")
 # elif (ladoUno == ladoDos == ladoTres):
 #      print (" El triángulo es equilátero ")
