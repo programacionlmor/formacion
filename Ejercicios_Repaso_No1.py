@@ -7,7 +7,7 @@
 """
 
 
-# Nota generales:
+# Notas generales:
 # condición: se crea utilizando operadores relacionales o de comparación y lógicos
 # Operadores relacionales:
 #    “==” se usa para determinar si dos valores son exactamente iguales. Ejemplo: 2 == 2    Resultado: true
@@ -27,7 +27,7 @@
 
 
 # Ejercicio No 1
-# Dados los tres lados de un triangulo, determine si el triangulo es equilátero, isóceles o  escaleno.
+# Dados los tres lados de un triángulo, determine si el triángulo es equilátero, isóceles o  escaleno.
 # Triángulo equilatero:  Tiene todos los lados iguales.
 # Triángulo isoceles  :  Tiene dos lados iguales y uno desigual.
 # Triángulo escaleno  :  Tiene todos los lados desiguales.
