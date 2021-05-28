@@ -17,8 +17,8 @@
 #    ">=” se usa para determinar si el valor de la izquierda es mayor o igual que el de la derecha. Ejemplo: 4 >= 2  Resultado:true
 #    "<=" se usa para determinar si el valor de la izquierda es menor o igual que el de la derecha. Ejemplo: 4 <= 6  Resultado:true
 # Operadores lógicos:
-#   "and"  :  Si y sólo si todos los elementos son True dará por resultado True. Sino False
-#   "or"   :  Si algún elemento es True dará por resultado True. Sino False
+#   "and"  :  Si y sólo si todos los elementos son True dará por resultado True. Sino False.
+#   "or"   :  Si algún elemento es True dará por resultado True. Sino False.
 #   "Not"  :  El operador “not” es unario, de negación por ende solo dará True si su elemento es False y viceversa.
 
 
@@ -27,10 +27,10 @@
 
 
 # Ejercicio No 1
-# Dados los tres lados de un triangulo, determine si el triangulo es equilatero, isoceles o obtuso
-# Triangulo equilatero: Tiene todos los lados iguales
-# Triangulo isoceles:  Tiene dos lados iguales y uno desigual
-# Triangulo escaleno:  Tiene todos los lados desiguales
+# Dados los tres lados de un triangulo, determine si el triangulo es equilátero, isóceles o  escaleno.
+# Triángulo equilatero:  Tiene todos los lados iguales.
+# Triángulo isoceles  :  Tiene dos lados iguales y uno desigual.
+# Triángulo escaleno  :  Tiene todos los lados desiguales.
 
 
 # Alternativa 1
@@ -40,12 +40,12 @@
 
 
 # if ((ladoUno == ladoDos) and (ladoDos == ladoTres)):
-#     print (" El triangulo es equilatero")
+#     print (" El triangulo es equilátero")
 # else:
 #     if  (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
-#         print (" El triangulo es isóceles ")
+#         print (" El triángulo es isóceles ")
 #     else:
-#         print ("El triangulo es escaleno")
+#         print ("El triángulo es escaleno")
         
         
 # Alternativa 2
@@ -56,11 +56,11 @@
 
 
 # if ((ladoUno == ladoDos) and (ladoDos == ladoTres)):
-#     print (" El triangulo es equilatero")
+#     print (" El triángulo es equilátero")
 # elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
-#      print (" El triangulo es isóceles ")
+#      print (" El triángulo es isóceles ")
 # else:
-#      print ("El triangulo es escaleno")
+#      print ("El triángulo es escaleno")
 
 # Alternativa 3
 
@@ -70,12 +70,12 @@
 
 
 # if ((ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres)):
-#     print (" El triangulo es escaleno")
+#     print (" El triángulo es escaleno")
 # else:
 #     if  (ladoUno == ladoDos == ladoTres):
-#         print (" El triangulo es equilatero ")
+#         print (" El triángulo es equilátero ")
 #     else:
-#         print ("El triangulo es isóceles ")
+#         print ("El triángulo es isóceles ")
 
 # Alternativa 4
 
@@ -85,8 +85,8 @@
 
 
 # if ((ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres)):
-#     print (" El triangulo es escaleno")
+#     print (" El triángulo es escaleno")
 # elif (ladoUno == ladoDos == ladoTres):
-#      print (" El triangulo es equilatero ")
+#      print (" El triángulo es equilátero ")
 # else:
-#      print ("El triangulo es isóceles ")
+#      print ("El triángulo es isóceles ")
