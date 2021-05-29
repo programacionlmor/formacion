@@ -3,7 +3,8 @@
   
   Autor :  Formador
   Creación/ Actualización  Observaciones
-     Mayo-26-2021          Versión inicial del programa
+     Mayo-26-2021          v1: Versión inicial del programa.
+     Mayo-29-2021          v2: Se incluye el perímetro del triángulo.
 """
 
 
@@ -23,9 +24,6 @@
 
 
 
-
-
-
 # Ejercicio No 1
 # Dados los tres lados de un triángulo, determine si el triángulo es equilátero, isósceles o  escaleno.
 # Triángulo equilatero:  Tiene todos los lados iguales.
@@ -38,7 +36,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-
+##Identificar el tipo de triángulo
 # if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #     print ("El triangulo es equilátero")
 # else:
@@ -54,7 +52,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-
+##Identificar el tipo de triángulo
 # if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #     print ("El triángulo es equilátero")
 # elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
@@ -68,7 +66,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-
+##Identificar el tipo de triángulo
 # if (ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres):
 #     print ("El triángulo es escaleno")
 # else:
@@ -83,10 +81,71 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-
+##Identificar el tipo de triángulo
 # if (ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres):
 #     print ("El triángulo es escaleno")
 # elif (ladoUno == ladoDos == ladoTres):
 #      print ("El triángulo es equilátero ")
 # else:
 #      print ("El triángulo es isósceles ")
+
+
+##################################################################################################
+#
+# VERSION 2 :  Incluir el perímetro del triángulo
+# 
+##################################################################################################
+
+# Ejercicio No 2
+# 1. Dados los tres lados de un triángulo, determine si el triángulo es equilátero, isósceles o  escaleno.
+#    Triángulo equilatero:  Tiene todos los lados iguales.
+#    Triángulo isósceles :  Tiene dos lados iguales y uno desigual.
+#    Triángulo escaleno  :  Tiene todos los lados desiguales.
+# 2. Calcular el perímetro del triángulo
+#    El Perímetro del triángulo es igual a la suma de los lados.
+
+
+# Alternativa 2 - con caracteres -
+
+# ladoUno,ladoDos,ladoTres = input("Digite el valor del lado uno del triángulo   : "), \
+#                            input("Digite el valor del lado dos del triángulo   : "), \
+#                            input("Digite el valor del lado tres del triángulo  : ")
+
+##Identificar el tipo de triángulo
+# if (ladoUno == ladoDos) and (ladoDos == ladoTres):
+#      print ("El triángulo es equilátero")
+# elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
+#       print ("El triángulo es isósceles ")
+# else:
+#       print ("El triángulo es escaleno")
+
+##Calcular el perímetro del triángulo
+# perimetroTriangulo = ladoUno + ladoDos + ladoTres  #  Concatena los valores
+# print("El perimetro del triángulo es", perimetroTriangulo)
+
+# Alternativa 2 - con valores convertidos a enteros -
+
+# ladoUno,ladoDos,ladoTres = input("Digite el valor del lado uno del triángulo   : "), \
+#                            input("Digite el valor del lado dos del triángulo   : "), \
+#                            input("Digite el valor del lado tres del triángulo  : ")
+
+# #Convertir los lados del triángulo de cadena a entero
+# ladoUno  = int(ladoUno)
+# ladoDos  = int(ladoDos)
+# ladoTres = int(ladoTres)
+
+
+# #Identificar el tipo de triángulo
+# if (ladoUno == ladoDos) and (ladoDos == ladoTres):
+#      print ("El triángulo es equilátero")
+# elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
+#       print ("El triángulo es isósceles ")
+# else:
+#       print ("El triángulo es escaleno")
+
+
+# #Calcular el perímetro del triángulo
+# perimetroTriangulo = ladoUno + ladoDos + ladoTres
+# print("El perimetro del triángulo es", perimetroTriangulo)
+
+
