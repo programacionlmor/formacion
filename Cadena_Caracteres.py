@@ -168,6 +168,16 @@
 #    print("es cadena alfanumérica") 
 
 
+####################################
+# Dividir una cadena por un caracter
+####################################
+# correo = "correo@usa.edu.co"
+# nombre, dominio = correo.split("@")
+# print(nombre)
+# print(dominio)
+
+
+
 
 # ####################################################
 # # Identificar los métodos según el tipo de dato
