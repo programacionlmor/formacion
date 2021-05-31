@@ -152,7 +152,7 @@
 # print(variosFestivos)
 
 # #################################################################
-#  comparaciónn de las tuplas  
+#  comparación de las tuplas  
 #  Python comienza comparando el primer elemento de cada secuencia. 
 #  Si son iguales, pasa al siguiente elemento, y así sucesivamente, 
 #  hasta encontrar elementos que difieren
