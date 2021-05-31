@@ -177,8 +177,7 @@
 # tuplaFestivos = ("lunes festivo", "domingo festivo", "viernes festivo")
 
 # print(tuplaFestivos.index("viernes festivo"))
-
-#split():   
+  
 
 
 
