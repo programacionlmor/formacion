@@ -1,11 +1,12 @@
 """
-  Ejercicios de repaso: Estructuras de decisión.
+  Ejercicios de repaso: Estructuras de decisión,repetición
   
   Autor :  Formador
   Creación/ Actualización  Observaciones
      Mayo-26-2021          v1: Versión inicial del programa
      Mayo-29-2021          v2: Se incluye el perímetro del triángulo
      Mayo-31-2021          v3: Se incluye validar si es posible construir el triángulo
+     Junio-1-2021          v4: Se incluye validar que los lados sean números enteros
 """
 
 
@@ -217,7 +218,7 @@
 #                     esPosibleTriangulo = True
 
 
-# #calcular el perímetro del triángulo
+# #calcular el perímetro del triángulo siempre encuando sea  posible construir el triángulo
 # if esPosibleTriangulo:
 #     perimetroTriangulo = ladoUno + ladoDos + ladoTres
 #     print("El perímetro del triángulo es", perimetroTriangulo)
@@ -256,7 +257,7 @@
 #      esPosibleTriangulo = True
 
 
-# #calcular el perímetro del triángulo
+# #calcular el perímetro del triángulo siempre encuando sea  posible construir el triángulo
 # if esPosibleTriangulo:
 #     perimetroTriangulo = ladoUno + ladoDos + ladoTres
 #     print("El perímetro del triángulo es", perimetroTriangulo)
@@ -294,19 +295,18 @@
 # if esPosibleTriangulo:
 #    if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #      print ("El triángulo es equilátero")
-#      esPosibleTriangulo = True
 #    elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
 #       print ("El triángulo es isósceles ")
-#       esPosibleTriangulo = True
 #    else:
 #      print ("El triángulo es escaleno")
-#      esPosibleTriangulo = True
 
 
-# # #calcular el perímetro del triángulo si es posible construir el triángulo
+
+# #calcular el perímetro del triángulo siempre encuando sea  posible construir el triángulo
 # if esPosibleTriangulo:
 #     perimetroTriangulo = ladoUno + ladoDos + ladoTres
 #     print("El perímetro del triángulo es", perimetroTriangulo)
 # else:
 #     print("No es posible calcular el perímetro")
+
 
