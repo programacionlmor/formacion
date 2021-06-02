@@ -27,7 +27,7 @@
 #   "Not"  :  El operador “not” es unario, de negación por ende solo dará True si su elemento es False y viceversa.
 #
 # Simulador de tablas de verdad
-# http://logicaunad.com/jtruth/resolver.php
+# http://logicaunad.com/jtruth/
 
 ############################################################################################################
 #
