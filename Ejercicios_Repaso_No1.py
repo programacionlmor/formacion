@@ -6,10 +6,11 @@
      Mayo-26-2021          v1: Versión inicial del programa
      Mayo-29-2021          v2: Se incluye el perímetro del triángulo
      Mayo-31-2021          v3: Se incluye validar si es posible construir el triángulo
-     Junio-1-2021          v4: Se incluye validar que los lados sean números enteros
+     Junio-1-2021          v4: Validar que los números ingresados por el usuario sean 
+                               caracteres entre el cero y el 9 o combinatoria de ellos
+     Junio-2-2021          v5: Incluir función para validar si es posible construir el triángulo
+
 """
-
-
 
 # Notas generales:
 # condición: se crea utilizando operadores relacionales o de comparación y lógicos
@@ -24,7 +25,9 @@
 #   "and"  :  Si y sólo si todos los elementos son True dará por resultado True. Sino False.
 #   "or"   :  Si algún elemento es True dará por resultado True. Sino False.
 #   "Not"  :  El operador “not” es unario, de negación por ende solo dará True si su elemento es False y viceversa.
-
+#
+# Simulador de tablas de verdad
+# http://logicaunad.com/jtruth/resolver.php
 
 ############################################################################################################
 #
@@ -45,7 +48,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-##Identificar el tipo de triángulo
+##Identificar el tipo de triángulo según sus lados
 # if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #     print ("El triangulo es equilátero")
 # else:
@@ -61,7 +64,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-##Identificar el tipo de triángulo
+##Identificar el tipo de triángulo según sus lados
 # if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #     print ("El triángulo es equilátero")
 # elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
@@ -75,7 +78,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-##Identificar el tipo de triángulo
+##Identificar el tipo de triángulo según sus lados
 # if (ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres):
 #     print ("El triángulo es escaleno")
 # else:
@@ -90,7 +93,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-##Identificar el tipo de triángulo
+##Identificar el tipo de triángulo según sus lados
 # if (ladoUno != ladoDos) and (ladoDos != ladoTres) and (ladoUno != ladoTres):
 #     print ("El triángulo es escaleno")
 # elif (ladoUno == ladoDos == ladoTres):
@@ -120,7 +123,7 @@
 #                            input("Digite el valor del lado dos del triángulo   : "), \
 #                            input("Digite el valor del lado tres del triángulo  : ")
 
-# #Identificar el tipo de triángulo
+##Identificar el tipo de triángulo según sus lados
 # if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #      print ("El triángulo es equilátero")
 # elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
@@ -144,7 +147,7 @@
 # ladoTres = int(ladoTres)
 
 
-# #Identificar el tipo de triángulo
+##Identificar el tipo de triángulo según sus lados
 # if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #      print ("El triángulo es equilátero")
 # elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
@@ -194,9 +197,9 @@
 # ladoTres = int(ladoTres)
 
 
-# esPosibleTriangulo = False
+# # Validar si es posible construir el triángulo según el teorema de la desigualdad del triángulo y determinar el  tipo de triángulo según los lados
 
-# # Validar si es posible construir el triángulo y el tipo de triángulo
+# esPosibleTriangulo = False
 # if (ladoUno + ladoDos < ladoTres):
 #     print ("No es posible construir un triángulo con los lados proporcionados")
 # else:
@@ -238,8 +241,9 @@
 # ladoTres = int(ladoTres)
 
 
+# # Validar si es posible construir el triángulo según el teorema de la desigualdad del triángulo y determinar el  tipo de triángulo según los lados
+
 # esPosibleTriangulo = False
-# # Validar si es posible construir el triángulo y el tipo de triángulo
 # if (ladoUno + ladoDos < ladoTres):
 #     print ("No es posible construir un triángulo con los lados proporcionados")
 # elif (ladoUno + ladoTres < ladoDos):
@@ -281,7 +285,7 @@
 
 
 
-# #Validar si es posible construir el triángulo
+# #Validar si es posible construir el triángulo de acuerdo al teorema de la desigualdad del triángulo
 
 # esPosibleTriangulo = False
 # if (ladoUno + ladoDos > ladoTres) and (ladoUno + ladoTres > ladoDos) and (ladoDos + ladoTres > ladoUno):
@@ -291,7 +295,7 @@
 
 
 
-# # Validar el tipo de triángulo si es posible construir el triángulo
+## Validar el tipo de triángulo según los lados  siempre encuando sea posible construir el triángulo 
 # if esPosibleTriangulo:
 #    if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #      print ("El triángulo es equilátero")
@@ -312,7 +316,8 @@
 
 ###########################################################################################################
 #
-# VERSION 4 :  Validar que los números ingresados por el usuario sean enteros
+# VERSION 4 :  Validar que los números ingresados por el usuario sean caracteres entre el cero y el 9 
+#              o combinatoria de ellos 
 # 
 ############################################################################################################
 
@@ -330,15 +335,15 @@
 #    la medida del tercer lado.
 # 3. Calcular el perímetro del triángulo en caso de que sea posible construir el triángulo:
 #    El Perímetro del triángulo es igual a la suma de los lados.
-# 4. Validar si los números ingresados por el usuario son enteros.
-
+# 4. Validar que los caracteres ingresados por el usuario sean caracteres entre el cero y el 9 
+#    o combinatoria de ellos
 #############################################################################################################
-
 
 #Alternativa 1 -  while
 
+# Capturar los lados del triángulo y validar que los caracteres ingresados por el usuario sean caracteres 
+# entre el cero y el 9  o combinatoria de ellos
 
-#Capturar los lados del triángulo y validar si son números enteros
 # entradaCorrecta = True
 # while entradaCorrecta:
 
@@ -347,7 +352,9 @@
 #                                  input("Digite el valor del lado dos del triángulo   : "), \
 #                                  input("Digite el valor del lado tres del triángulo  : ")
       
-#       # Validar si los lados son números enteros
+#        # Validar que los caracteres ingresados por el usuario sean caracteres 
+#        # entre el cero y el 9  o combinatoria de ellos
+     
 #       if (ladoUno.isnumeric() and ladoDos.isnumeric() and ladoTres.isnumeric()):
 #           entradaCorrecta = False
 #       else:
@@ -363,7 +370,7 @@
 
 
 
-# #Validar si es posible construir el triángulo
+# #Validar si es posible construir el triángulo de acuerdo al teorema de la desigualdad del triángulo
 
 # esPosibleTriangulo = False
 # if (ladoUno + ladoDos > ladoTres) and (ladoUno + ladoTres > ladoDos) and (ladoDos + ladoTres > ladoUno):
@@ -373,7 +380,7 @@
 
 
 
-# # Validar el tipo de triángulo si es posible construir el triángulo
+# # Validar el tipo de triángulo siempre encuando sea posible construir el triángulo de acuerdo al teorema de la desigualdad del triángulo
 # if esPosibleTriangulo:
 #    if (ladoUno == ladoDos) and (ladoDos == ladoTres):
 #      print ("El triángulo es equilátero")
@@ -390,6 +397,171 @@
 #     print("El perímetro del triángulo es", perimetroTriangulo)
 # else:
 #     print("No es posible calcular el perímetro")
+
+
+
+
+############################################################################################################
+# Ejercicio No 5
+# 1. Dados los tres lados de un triángulo, determine si el triángulo es equilátero, isósceles o  escaleno.
+#    Triángulo equilatero:  Tiene todos los lados iguales.
+#    Triángulo isósceles :  Tiene dos lados iguales y uno desigual.
+#    Triángulo escaleno  :  Tiene todos los lados desiguales.
+# 2. Validar si los lados digitados por el usuario nos permiten construir un triángulo:
+#    teorema de la desigualdad del triángulo: la suma de dos lados del triángulo siempre es mayor que 
+#    la medida del tercer lado.
+# 3. Calcular el perímetro del triángulo en caso de que sea posible construir el triángulo:
+#    El Perímetro del triángulo es igual a la suma de los lados.
+# 4. Validar que los caracteres ingresados por el usuario sean caracteres entre el cero y el 9 
+#    o combinatoria de ellos
+# 5. Crear una función que valide si los lados digitados por el usuario nos permiten construir un triángulo:
+#    teorema de la desigualdad del triángulo: la suma de dos lados del triángulo siempre es mayor que 
+#    la medida del tercer lado. 
+#############################################################################################################
+
+#Alternativa 1 -  función en el mismo código desde donde se llama la función
+
+# #################################################################################################
+# Función que valida si es posible construir un triángulo, de acuerdo al teorema de la desigualdad
+###################################################################################################
+# def validarTriangulo(ladoUno:int,ladoDos:int,ladoTres:int) -> bool:
+#     """
+#     Parámetros: Recibe los lados enteros de un triángulo
+#     Retorna   : True:  indicando que es posible construir el triángulo
+#                 False: indicando que no es posible construir el triángulo
+#     """
+    
+#     if (ladoUno + ladoDos > ladoTres) and (ladoUno + ladoTres > ladoDos) and (ladoDos + ladoTres > ladoUno):
+#         esPosibleTriangulo = True
+#     else:
+#         esPosibleTriangulo = False
+
+#     return esPosibleTriangulo
+
+
+
+
+
+# Capturar los lados del triángulo y validar que los caracteres ingresados por el usuario sean caracteres 
+# entre el cero y el 9  o combinatoria de ellos
+
+# entradaCorrecta = True
+# while entradaCorrecta:
+
+#       #Capturar los lados del triángulo
+#       ladoUno,ladoDos,ladoTres = input("Digite el valor del lado uno del triángulo   : "), \
+#                                  input("Digite el valor del lado dos del triángulo   : "), \
+#                                  input("Digite el valor del lado tres del triángulo  : ")
+      
+#       if (ladoUno.isnumeric() and ladoDos.isnumeric() and ladoTres.isnumeric()):
+#           entradaCorrecta = False
+#       else:
+#           print("Los lados deben ser números enteros")
+          
+
+
+
+# # #Convertir los lados del triángulo de cadena a entero
+# ladoUno  = int(ladoUno)
+# ladoDos  = int(ladoDos)
+# ladoTres = int(ladoTres)
+
+
+
+# Validar si es posible construir el triángulo. En caso de que sea posible construir el triángulo  
+# identificar el tipo de triángulo según su lados 
+
+
+# if validarTriangulo(ladoUno,ladoDos,ladoTres):
+#    if (ladoUno == ladoDos) and (ladoDos == ladoTres):
+#      print ("El triángulo es equilátero")
+#    elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
+#       print ("El triángulo es isósceles ")
+#    else:
+#      print ("El triángulo es escaleno")
+# else:
+#     print("No es posible construir el triángulo") 
+
+
+# # #calcular el perímetro del triángulo siempre encuando sea  posible construir el triángulo
+# if validarTriangulo(ladoUno,ladoDos,ladoTres):
+#     perimetroTriangulo = ladoUno + ladoDos + ladoTres
+#     print("El perímetro del triángulo es", perimetroTriangulo)
+# else:
+#     print("No es posible calcular el perímetro")
+
+
+
+
+#Alternativa 2 -  función en el mismo código desde donde se llama la función  e identificación del tipo de triángulo 
+#                 y cálculo del perímetro con una sola validación.
+
+# #################################################################################################
+# Función que valida si es posible construir un triángulo, de acuerdo al teorema de la desigualdad
+###################################################################################################
+# def validarTriangulo(ladoUno:int,ladoDos:int,ladoTres:int) -> bool:
+#     """
+#     Parámetros: Recibe los lados enteros de un triángulo
+#     Retorna   : True:  indicando que es posible construir el triángulo
+#                 False: indicando que no es posible construir el triángulo
+#     """
+    
+#     if (ladoUno + ladoDos > ladoTres) and (ladoUno + ladoTres > ladoDos) and (ladoDos + ladoTres > ladoUno):
+#         esPosibleTriangulo = True
+#     else:
+#         esPosibleTriangulo = False
+
+#     return esPosibleTriangulo
+
+
+
+# #Capturar los lados del triángulo y validar si son números enteros
+# entradaCorrecta = True
+# while entradaCorrecta:
+
+#       #Capturar los lados del triángulo
+#       ladoUno,ladoDos,ladoTres = input("Digite el valor del lado uno del triángulo   : "), \
+#                                  input("Digite el valor del lado dos del triángulo   : "), \
+#                                  input("Digite el valor del lado tres del triángulo  : ")
+      
+# #        # Validar que los caracteres ingresados por el usuario sean caracteres 
+# #        # entre el cero y el 9  o combinatoria de ellos
+
+#       if (ladoUno.isnumeric() and ladoDos.isnumeric() and ladoTres.isnumeric()):
+#           entradaCorrecta = False
+#       else:
+#           print("Los lados deben ser números enteros")
+          
+
+
+
+# # #Convertir los lados del triángulo de cadena a entero
+# ladoUno  = int(ladoUno)
+# ladoDos  = int(ladoDos)
+# ladoTres = int(ladoTres)
+
+
+# # Validar si es posible construir el triángulo. En caso de que sea posible construir el triángulo  
+# # identificar el tipo de triángulo según su lados y calcular el perímetro.
+
+# if validarTriangulo(ladoUno,ladoDos,ladoTres):
+
+#    # Identificar el tipo de triángulo según los lados
+#    if (ladoUno == ladoDos) and (ladoDos == ladoTres):
+#      print ("El triángulo es equilátero")
+#    elif (ladoUno == ladoDos) or (ladoUno == ladoTres) or (ladoDos == ladoTres):
+#       print ("El triángulo es isósceles ")
+#    else:
+#      print ("El triángulo es escaleno")
+   
+#    #calcular el perímetro
+#    perimetroTriangulo = ladoUno + ladoDos + ladoTres
+#    print("El perímetro del triángulo es", perimetroTriangulo)
+
+# else:
+#     print("No es posible construir el triángulo") 
+
+
 
 
 
