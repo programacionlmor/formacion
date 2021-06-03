@@ -6,8 +6,11 @@
      Mayo-28-2021          Versión inicial del programa
 """
 
-#Proponer una representación con tuplas para las cartas de una baraja. 
-
+#######################################################################
+# Ejercicio No 1
+# Proponer una representación con tuplas para las cartas de una baraja. 
+# Obtener una carta aleatoria
+#######################################################################
 # import random
 
 # def seleccionarCarta(numeroPalo:int, numeroCara:int) ->tuple:
@@ -25,7 +28,12 @@
 # print(seleccionarCarta (aleatorioPalo,aleatorioCara))
 
 
-# Sacar cuatro  cartas al azar. Si se obtiene para las cuatro cartas la misma cara sin importar el palo, el jugador gana
+
+#####################################################################
+# Ejercicio 2:
+# Sacar cuatro cartas al azar. Si se obtiene para las cuatro cartas 
+# la misma cara sin importar el palo, el jugador gana
+#####################################################################
 
 
 # import random
@@ -39,10 +47,9 @@
 #     return carta
 
 
-# aleatorioCara = random.randint(0, 12)
-# aleatorioPalo = random.randint(0, 3)
-  
+
 # listaCartas = []
+       
 # for lanzada in range(1,5):
 
 #     aleatorioCara = random.randint(0, 12)
@@ -54,14 +61,18 @@
 # print(listaCartas)
 
 
-# if (listaCartas[0][1] == listaCartas[1][1] ==  listaCartas [2][1] ==  listaCartas[3][1] == listaCartas[4][1]):
+# if (listaCartas[0][0] == listaCartas[1][0] ==  listaCartas [2][0] ==  listaCartas[3][0] ):
 #     print("Ganador")
 # else:
 #     print("Inténtalo nuevamente")
 
 
 
-#Escribir una función que reciba dos vectores que parten del origen (0,0) y devuelva su producto escalar
+###############################################################################
+# Ejercicio 3:
+# Escribir una función que reciba dos vectores que parten del origen (0,0) y 
+# devuelva su producto escalar
+###############################################################################
 
 
 # valorX1 = 3
@@ -79,9 +90,11 @@
 # print(productoPunto )
 
 
-
+##################################################################################
+# Ejercicio 4:
 # Escribir una función que reciba dos vectores y devuelva si son o no ortogonales 
 # (perpendiculares) ProductoPunto = 0
+###################################################################################
 
 
 
@@ -108,9 +121,12 @@
 
 
 
-# Dada una lista de números enteros y un entero k, escribir una programa que:
+###############################################################################
+# Ejercicio 5:
+#  Dada una lista de números enteros y un entero k, escribir una programa que:
 # Devuelva tres listas, una con los menores, otra con los mayores y otra con
 # los iguales a k.
+#################################################################################
 
 # tamanoLista = int(input("Digite el tamaño de la lista de numeros enteros :"))
 
