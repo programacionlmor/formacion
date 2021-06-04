@@ -66,7 +66,7 @@
 # Ejercicio 5: Muestre la tabla de Multiplicar de 1 ( 10 primeras filas) 
 #########################################################################
 
-# tabla = 1
+
 # for lineaTabla  in range(1,11):
 #     producto = 1 * lineaTabla
 #     print("1 x {} = {}".format(lineaTabla,producto)) 
