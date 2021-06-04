@@ -1,22 +1,8 @@
-"""
-  Listas en python
-  Autor :  Formador
-|
-  Creación/ Actualización  Observaciones
-     Mayo-28-2021          Versión inicial del programa
-"""
-from os import system
-
-######################################################
-#  OPERACIONES BASICAS CON LISTAS
-######################################################
-
-
 # # #creo una lista vacia
 # numeros = []
 # print(numeros)
 
-# # #Añadir elementos a lista 
+# # # #Añadir elementos a lista 
 # numeros.append(5)
 # print(numeros)
 
@@ -53,7 +39,7 @@ from os import system
 # numeros = [5,"piña","sandia","calabazas","manzanas","peras","uvas","zanahorias","bananos","cerezas","fresas"]
 # print(numeros)
 
-# # #Cambiar el valor de un elemento 
+# # # #Cambiar el valor de un elemento 
 # numeros[0] = 6
 # print(numeros)
 
@@ -63,108 +49,117 @@ from os import system
 # numeros[-3] = "agraz"
 # print(numeros)
 
-# # #Ver un rango de la lista con incrementos
+# # # #Ver un rango de la lista con incrementos
 # numeros = [5,"piña","sandia","calabazas","manzanas","peras","uvas","zanahorias","bananos","cerezas","fresas"]
 # porcionLista = numeros[1:10:2]
+# porcionLista = numeros[4:]
+# porcionLista = numeros[:3]
 # print(porcionLista)
 
-# #Insertar un elemento a la lista
+# # #Insertar un elemento a la lista
 # numeros.insert(9,"melocotones") # El elemento que inserto queda en esa posición
 # print(numeros)
 
-# # #Borrar un elemento a la lista por indice
+# # # #Borrar un elemento a la lista por indice
 # numeros.pop(0)
 # print(numeros)
 
-# # #Borrar  el primer elemento que coincida en contenido
+# # # #Borrar  el primer elemento que coincida en contenido
 # numeros.remove("fresas")
 # print(numeros)
 
 # del numeros[0:len(numeros)+1]
 # print(numeros)
 
-# # ######################################################
-# # #  OTRAS FUNCIONES CON LISTAS
-# # ######################################################
+# # # ######################################################
+# # # #  OTRAS FUNCIONES CON LISTAS
+# # # ######################################################
 
-# # #funcion count() cuenta la cantidad de veces que un elemento aparece en la lista.
+# # # #funcion count() cuenta la cantidad de veces que un elemento aparece en la lista.
 # numeros = [5,"piña","fresas","calabazas","manzanas","fresas","uvas","zanahorias","bananos","cerezas","fresas"]
 # numeroRepeticiones = numeros.count("fresas")
 # print(numeroRepeticiones)
 
-# # #funcion extend() extiende una lista agregando un iterable al final.
+# # # #funcion extend() extiende una lista agregando un iterable al final.
 # numeros.extend(["moras"])
 # print(numeros)
 
-# # #funcion index() recibe un elemento como argumento, y devuelve el índice de su primera aparición en la lista.
+# # # #funcion index() recibe un elemento como argumento, y devuelve el índice de su primera aparición en la lista.
 # indice =numeros.index("fresas")
 # print(indice)
 
-# indice =numeros.index("fresas",3)
+# indice =numeros.index("fresas",3) # Devuelve el índice de la primera aparición apartir de la posición 3
 # print(indice)
 
-# # #funcion reverse(). Asigna sobre la misma variable.
-# # #invierte el orden de los elementos de una lista. 
-# numeros.reverse() 
-# print(numeros)
+# # # #funcion reverse(). Asigna sobre la misma variable.
+# # # #invierte el orden de los elementos de una lista. 
+# # numeros.reverse() 
+# # print(numeros)
 
-# # #funcion sort(). Asigna sobre la misma variable
-# # #ordena los elementos de una lista. 
-# system('cls')
-# print(numeros)
-# numeros.pop(-1)
-# print(numeros)
-# numeros.sort()
-# print(numeros)
-# numeros.sort(reverse=True)
-# print(numeros)
+# # # #funcion sort(). Asigna sobre la misma variable
+# # # #ordena los elementos de una lista. 
 
-# #########################################################
-# # Numeros primos
-# #########################################################
-# # Es un número natural.
-# # Es mayor que 1.
-# # Son divisibles por sí mismo y por 1.
-
-# #Versión 1
-# rangoFinal  = 5
-# listaPrimos = []
-# for numeroActual in range(2,rangoFinal+1):
-
-#     contadorDivisores = 0
-#     # ciclo interno para identificar si tiene más de un divisor
-#     for divisor in range(2,numeroActual+1):
-#         if (numeroActual % divisor == 0):
-#            contadorDivisores +=1
+# # numeros = [5,"piña","fresas","calabazas","manzanas","fresas","uvas","zanahorias","bananos","cerezas","fresas"]
+# # system('cls')
+# # print(numeros)
+# # numeros.pop(0)
+# # print(numeros)
+# # numeros.sort()
+# # print(numeros)
+# # numeros.sort(reverse=True)
+# # print(numeros)
 
 
-#      #  Si no tiene más de un divisor
-#     if contadorDivisores <=1 :
-#         listaPrimos.append(numeroActual)
 
-# print("Lista de Primos :",listaPrimos )
+# # # for con listas
+# # numeros = ["piña","fresas","calabazas","manzanas","fresas","uvas","zanahorias","bananos","cerezas","fresas"]
 
+# # for fruta  in numeros:
+# #   print(fruta, end =" ")
 
-# #Versión 2
+# # # for con indice
 
-# rangoFinal  = 5
-# listaRango = list(range(2,rangoFinal+1))
+# # numeros = ["piña","fresas","calabazas","manzanas","fresas","uvas","zanahorias","bananos","cerezas","fresas"]
 
-
-# listaPrimos = []
-# for numeroActual in listaRango:
-
-#     contadorDivisores = 0
-#     # ciclo interno para identificar si tiene más de un divisor
-
-#     listaDivisor = list(range(2,numeroActual+1))
-#     for divisor in listaDivisor:
-#         if (numeroActual % divisor == 0):
-#            contadorDivisores +=1
+# # for indice in range(len(numeros)):
+# #   print(numeros[indice],end=" ")
 
 
-#      #  Si no tiene más de un divisor
-#     if contadorDivisores <=1 :
-#         listaPrimos.append(numeroActual)
+# # #while 
 
-# print("Lista de Primos :",listaPrimos )
+# # numeros = ["piña","fresas","calabazas","manzanas","fresas","uvas","zanahorias","bananos","cerezas","fresas"]
+
+# # i = 0
+# # while i < len(numeros):
+# #   print(numeros[i])
+# #   i = i + 1
+
+
+# # # Unión de listas con concatenación
+
+# # frutas   = ["fresa", "mango", "agraz"]
+# # verduras = ["tomate", "lechuga", "repollo "]
+
+# # alimentos = frutas + verduras
+
+# # print(alimentos)
+
+
+# # # Unión con for
+
+# # frutas   = ["fresa", "mango", "agraz"]
+# # verduras = ["tomate", "lechuga", "repollo "]
+
+
+# # for verdura in verduras:
+# #   frutas.append(verdura)
+
+# # print(frutas)
+
+# # # Unión con  extend()
+
+# # frutas   = ["fresa", "mango", "agraz"]
+# # verduras = ["tomate", "lechuga", "repollo "]
+
+# # frutas.extend(verduras)
+# # print(frutas)
