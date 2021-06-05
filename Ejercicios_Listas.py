@@ -22,7 +22,6 @@
 #               ]
 
 # print(len(listaBaraja))
-
 # print(listaBaraja)
 
 # listaCaras = ["As", "Dos", "Tres", "Cuatro", "Cinco", "Seis",  "Siete", "Ocho", "Nueve", "Diez", "Joker", "Reina", "Rey"] 
@@ -36,17 +35,17 @@
 # print(listaBaraja[0][10],"de",listaBaraja[1][3])
 
 
-#############################################################################
-# Ejercicio 2:
-# Dada la Lista de Baraja, muestre en pantalla las siguientes cartas
-# empleando indices según correspondan:
-#  1. Joker Diamantes
-#  2. Rey de corazones
-#  3. Reina  de tréboles
-#  4. Reina de Espadas
-#  5. Joker J Diamantes D
-#  6. Reina a  treboles s
-#############################################################################
+# #############################################################################
+# # Ejercicio 2:
+# # Dada la Lista de Baraja, muestre en pantalla las siguientes cartas
+# # empleando indices según correspondan:
+# #  1. Joker Diamantes
+# #  2. Rey de corazones
+# #  3. Reina  de tréboles
+# #  4. Reina de Espadas
+# #  5. Joker J Diamantes D
+# #  6. Reina a  treboles s
+# #############################################################################
 
 
 # listaPalos = ["Corazones", "Diamantes", "Tréboles", "Espadas"]
@@ -56,28 +55,24 @@
 # print(listaBaraja[3],"de", listaBaraja[0][0])
 # print(listaBaraja[2],"de", listaBaraja[0][2])
 # print(listaBaraja[2],"de", listaBaraja[0][3])
-
-
-
-
 # print(listaBaraja[1],listaBaraja[1][0],listaBaraja[0][1],listaBaraja[0][1][0])
 # print(listaBaraja[2],listaBaraja[2][4],listaBaraja[0][2],listaBaraja[0][2][7])
 
 
 
-#############################################################################
-# Ejercicio 3:
-# Dada la Lista de Baraja, muestre en pantalla las siguientes cartas
-# empleando indices según correspondan, utilizando variables:
-#  1. Siete de tréboles
-#############################################################################
+# #############################################################################
+# # Ejercicio 3:
+# # Dada la Lista de Baraja, muestre en pantalla las siguientes cartas
+# # empleando indices según correspondan, utilizando variables:
+# #  1. Siete de tréboles
+# #############################################################################
 # listaBaraja = [ ["As ", "Dos ", "Tres ", "Cuatro ", "Cinco ", "Seis ",  "Siete ", "Ocho ", "Nueve ", "Diez ", "Joker ", "Reina ", "Rey "], \
 #                 ["Corazones ", "Diamantes ", "Tréboles ", "Espadas "] \
 #               ]
 
 # print(listaBaraja)
 
-#listaCaras = ["As", "Dos", "Tres", "Cuatro", "Cinco", "Seis",  "Siete", "Ocho", "Nueve", "Diez", "Joker", "Reina", "Rey"] 
+# listaCaras = ["As", "Dos", "Tres", "Cuatro", "Cinco", "Seis",  "Siete", "Ocho", "Nueve", "Diez", "Joker", "Reina", "Rey"] 
 # listaPalos = ["Corazones ", "Diamantes ", "Tréboles ", "Espadas "]
 # listaBaraja = [listaCaras,listaPalos ]
 
@@ -90,14 +85,14 @@
 
 
 
-#######################################################################
-# Ejercicio No 4
-# Proponer una representación con tuplas para las cartas de una baraja. 
-# Obtener una carta aleatoria
-#######################################################################
+# #######################################################################
+# # Ejercicio No 4
+# # Proponer una representación con listas para las cartas de una baraja. 
+# # Obtener una carta aleatoria
+# #######################################################################
 # import random
 
-# def seleccionarCarta(numeroPalo:int, numeroCara:int) ->tuple:
+# def seleccionarCarta(numeroPalo:int, numeroCara:int) ->list:
 #     caras = ["As ", "Dos ", "Tres ", "Cuatro ", "Cinco ", "Seis ",  "Siete ", "Ocho ", "Nueve ", "Diez ", "Joker ", "Reina ", "Rey "]
 #     palos = ["Corazones ", "Diamantes ", "Treboles ", "Espadas "]
 
