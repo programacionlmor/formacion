@@ -17,27 +17,23 @@
 #  4. Joker de espadas
 #############################################################################
 
-
-
-# listaBaraja = [ ["As ", "Dos ", "Tres ", "Cuatro ", "Cinco ", "Seis ",  "Siete ", "Ocho ", "Nueve ", "Diez ", "Joker ", "Reina ", "Rey "], \
+# listaBaraja = [ ["As", "Dos", "Tres", "Cuatro", "Cinco", "Seis",  "Siete", "Ocho", "Nueve", "Diez", "Joker", "Reina", "Rey"], \
 #                 ["Corazones ", "Diamantes ", "Tréboles ", "Espadas "] \
 #               ]
 
+# print(len(listaBaraja))
+
 # print(listaBaraja)
 
-# listaCaras = ["As ", "Dos ", "Tres ", "Cuatro ", "Cinco ", "Seis ",  "Siete ", "Ocho ", "Nueve ", "Diez ", "Joker ", "Reina ", "Rey "] 
+# listaCaras = ["As", "Dos", "Tres", "Cuatro", "Cinco", "Seis",  "Siete", "Ocho", "Nueve", "Diez", "Joker", "Reina", "Rey"] 
 # listaPalos = ["Corazones ", "Diamantes ", "Tréboles ", "Espadas "]
 # listaBaraja = [listaCaras,listaPalos ]
+# print(len(listaBaraja))
 
-
-# print(listaBaraja[0][6],listaBaraja[1][2])
-
-
-
-
-# print(listaBaraja[0][12],listaBaraja[1][0])
-# print(listaBaraja[0][0],listaBaraja[1][1])
-# print(listaBaraja[0][10],listaBaraja[1][3])
+# print(listaBaraja[0][6],"de",listaBaraja[1][2])
+# print(listaBaraja[0][12],"de",listaBaraja[1][0])
+# print(listaBaraja[0][0],"de",listaBaraja[1][1])
+# print(listaBaraja[0][10],"de",listaBaraja[1][3])
 
 
 #############################################################################
@@ -53,13 +49,16 @@
 #############################################################################
 
 
-# listaPalos = ["Corazones ", "Diamantes ", "Tréboles ", "Espadas "]
+# listaPalos = ["Corazones", "Diamantes", "Tréboles", "Espadas"]
 # listaBaraja = [listaPalos,"Joker ", "Reina ", "Rey "  ]
 
-# print(listaBaraja[1], listaBaraja[0][1])
-# print(listaBaraja[3], listaBaraja[0][0])
-# print(listaBaraja[2], listaBaraja[0][2])
-# print(listaBaraja[2], listaBaraja[0][3])
+# print(listaBaraja[1],"de", listaBaraja[0][1])
+# print(listaBaraja[3],"de", listaBaraja[0][0])
+# print(listaBaraja[2],"de", listaBaraja[0][2])
+# print(listaBaraja[2],"de", listaBaraja[0][3])
+
+
+
 
 # print(listaBaraja[1],listaBaraja[1][0],listaBaraja[0][1],listaBaraja[0][1][0])
 # print(listaBaraja[2],listaBaraja[2][4],listaBaraja[0][2],listaBaraja[0][2][7])
@@ -78,7 +77,7 @@
 
 # print(listaBaraja)
 
-# listaCaras = ["As ", "Dos ", "Tres ", "Cuatro ", "Cinco ", "Seis ",  "Siete ", "Ocho ", "Nueve ", "Diez ", "Joker ", "Reina ", "Rey "] 
+#listaCaras = ["As", "Dos", "Tres", "Cuatro", "Cinco", "Seis",  "Siete", "Ocho", "Nueve", "Diez", "Joker", "Reina", "Rey"] 
 # listaPalos = ["Corazones ", "Diamantes ", "Tréboles ", "Espadas "]
 # listaBaraja = [listaCaras,listaPalos ]
 
@@ -87,7 +86,7 @@
 # cara1 = 6 
 # palo0 = 1
 # palo1 = 2
-# print(listaBaraja[cara0][cara1],listaBaraja[palo0][palo1])
+# print(listaBaraja[cara0][cara1]," de",listaBaraja[palo0][palo1])
 
 
 
