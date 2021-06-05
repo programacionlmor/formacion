@@ -128,11 +128,11 @@
 # # #while 
 
 # # numeros = ["piña","fresas","calabazas","manzanas","fresas","uvas","zanahorias","bananos","cerezas","fresas"]
+# indice = 0
+# while indice < len(numeros):
+#   print(numeros[indice])
+#   indice = indice + 1
 
-# # i = 0
-# # while i < len(numeros):
-# #   print(numeros[i])
-# #   i = i + 1
 
 
 # # # Unión de listas con concatenación
