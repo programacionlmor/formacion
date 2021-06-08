@@ -292,6 +292,30 @@
 # print(miFamilia["hija"]["edad"])
 
 
+#10.1 Listas como valores de un diccionario
+
+# listaPapa = ["pepito", "Mayo" ,  25]
+# listaMama = ["pepita", "Junio",  24]
+# listaHija = ["pepin" , "Enero",  2 ]
+
+# elementoDiccionarioPapa = {"papa" : listaPapa}  # Sería equivalente a diccionarioPapa = {"papa" : ["pepito" , "Mayo"  ,  25]}
+# elementoDiccionarioMama = {"mama" : listaMama } # Sería equivalente a diccionarioMama = {"mama" : ["pepita" , "Junio" ,  24]}
+# elementoDiccionarioHija = {"hija" : listaHija}  # Sería equivalente a diccionarioHija = {"hija  : ["pepin"  , "Enero" ,   2]}
+
+# print(len(elementoDiccionarioPapa))
+# print(len(elementoDiccionarioMama))
+# print(len(elementoDiccionarioHija))
+
+# diccionarioFamilia = {"papa" : listaPapa,"mama" : listaMama, "hija" : listaHija}
+# # Sería equivalente a 
+# diccionarioFamilia = { "papa" : ["pepito" , "Mayo"  ,  25],  "mama" : ["pepita" , "Junio" ,  24] , "hija" : ["pepin"  , "Enero" ,   2] }
+# print(len(diccionarioFamilia))
+
+
+#diccionarioFamilia = {elementoDiccionarioPapa,elementoDiccionarioMama,elementoDiccionarioHija}  # Error
+
+
+
 # #11. funcion fromkeys. Crea un diccionario apartir de la llave, valor
 
 
