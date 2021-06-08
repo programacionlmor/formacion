@@ -2,7 +2,7 @@
   Ejercicios Listas
 
   Autor :  Formador
-|
+
   Creación/ Actualización  Observaciones
      Junio-2-2021          Versión inicial del programa
 """
@@ -150,7 +150,7 @@
 
 # import random
 
-# def seleccionarCarta(numeroPalo:int, numeroCara:int) ->tuple:
+# def seleccionarCarta(numeroPalo:int, numeroCara:int) ->list:
 #     caras = ["As ", "Dos ", "Tres ", "Cuatro ", "Cinco ", "Seis ",  "Siete ", "Ocho ", "Nueve ", "Diez ", "Joker ", "Reina ", "Rey "]
 #     palos = ["Corazones ", "Diamantes ", "Treboles ", "Espadas "]
 
