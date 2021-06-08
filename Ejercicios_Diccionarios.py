@@ -176,7 +176,7 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
            
          
 #         else:
-#             print ("Digite Valores correcores")
+#             print ("Digite Valores correctos")
 #             controladorCiclo = True
 
 
