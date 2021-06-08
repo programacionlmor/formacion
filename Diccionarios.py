@@ -306,15 +306,19 @@
 # print(len(elementoDiccionarioMama))
 # print(len(elementoDiccionarioHija))
 
-# diccionarioFamilia = {"papa" : listaPapa,"mama" : listaMama, "hija" : listaHija}
-# # Sería equivalente a 
+#diccionarioFamilia = {"papa" : listaPapa,"mama" : listaMama, "hija" : listaHija}
+# Sería equivalente a 
 # diccionarioFamilia = { "papa" : ["pepito" , "Mayo"  ,  25],  "mama" : ["pepita" , "Junio" ,  24] , "hija" : ["pepin"  , "Enero" ,   2] }
 # print(len(diccionarioFamilia))
 
 
+# print(diccionarioFamilia["papa"][0]) # Nombre Papa
+# print(diccionarioFamilia["papa"][2]) # Edad Papa
+# print(diccionarioFamilia["hija"][0]) # Nombre Hija
+# print(diccionarioFamilia["mama"])
+
+
 #diccionarioFamilia = {elementoDiccionarioPapa,elementoDiccionarioMama,elementoDiccionarioHija}  # Error
-
-
 
 # #11. funcion fromkeys. Crea un diccionario apartir de la llave, valor
 
@@ -333,9 +337,6 @@
 # municipiosCundinamarca =dict.fromkeys(municipios) # Crea valores None si no se define valor 
 # print(municipiosCundinamarca)
 
-# municipios = ("sopo","guatavita","suesca")
-# municipiosCundinamarca =dict.fromkeys(municipios) # Crea valores None si no se define valor 
-# print(municipiosCundinamarca)
 
 
 # #11. funcion setdefault(). Retorna el valor del item si la llave existe. Sino crea elemento
