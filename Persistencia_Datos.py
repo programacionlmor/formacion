@@ -119,7 +119,7 @@
 # if os.path.exists("archivo_prueba.txt"):
 #    os.remove("archivo_prueba.txt")
 # else:
-#   print("The file does not exist")
+#   print("El archivo no existe")
 
 
 
