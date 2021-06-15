@@ -240,4 +240,45 @@
 # print("Lista de Primos :",listaPrimos )
 
 
+###################################################################################
+# Ejercicio 8:
+# Encontrar cuantos valores  estan repetidos en una lista (sin contar el original)
+###################################################################################
+
+# listaValores = [1,2,3,1,2,1,1,2] 
+
+# valoresRepetidos = []
+# repetidos = 0
+# for valor in listaValores:
+#     if valor in valoresRepetidos:
+#        repetidos += 1
+#     else:
+#        valoresRepetidos.append(valor)
+
+# print(repetidos)
+
+##########################################################################################
+# Ejercicio 9:
+# Dada una lista determinar las veces que el elmento actual es igual al elemento anterior
+##########################################################################################
+
+
+# Funciona cuando k=1
+# listaValores = [1,1,3,2,2] 
+
+
+# longitudListaValores  = len(listaValores)
+
+
+# numeroIguales  = 0
+# posicionActual = 1
+# while (posicionActual <= longitudListaValores-1):
+#       examen   = listaValores[posicionActual]
+#       anterior = listaValores[posicionActual-1]
+#       if listaValores[posicionActual] == listaValores[posicionActual-1]:
+#           numeroIguales += 1
+#       posicionActual +=1
+
+# print(numeroIguales)
+
 
