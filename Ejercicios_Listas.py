@@ -263,7 +263,7 @@
 ##########################################################################################
 
 
-# Funciona cuando k=1
+
 # listaValores = [1,1,3,2,2] 
 
 
@@ -273,8 +273,6 @@
 # numeroIguales  = 0
 # posicionActual = 1
 # while (posicionActual <= longitudListaValores-1):
-#       examen   = listaValores[posicionActual]
-#       anterior = listaValores[posicionActual-1]
 #       if listaValores[posicionActual] == listaValores[posicionActual-1]:
 #           numeroIguales += 1
 #       posicionActual +=1
