@@ -283,5 +283,37 @@
 # print(numeroIguales)
 
 
+#------------------
+# Versión con for
+#------------------
+# listaValores = [1,1,3,2,2] 
 
+# longitudListaValores  = len(listaValores)
+# numeroIguales  = 0
+# for posicionActual in range(1,longitudListaValores):
+#     if listaValores[posicionActual] == listaValores[posicionActual-1]:
+#        numeroIguales += 1
+
+# print(numeroIguales)
+
+
+###################################################################################################
+# Ejercicio 10:
+# Dada una lista determinar las veces que el elmento actual es igual a los dos elementos anteriores
+###################################################################################################
+
+# listaValores          = [1,2,1,2,1] 
+# longitudListaValores  = len(listaValores)
+
+# numeroIguales  = 0
+# for posicionActual in range(1,longitudListaValores):
+#     posicionAnterior = posicionActual - 2
+#     rangoAnterior    = range(posicionAnterior, posicionActual)
+#     for revisionActual in rangoAnterior:
+#         if (revisionActual >= 0):
+#            if listaValores[posicionActual] == listaValores[revisionActual]:
+#               numeroIguales += 1  
+               
+
+# print(numeroIguales)
 
