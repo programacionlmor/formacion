@@ -263,6 +263,9 @@
 ##########################################################################################
 
 
+#------------------
+# Versión con while
+#------------------
 
 # listaValores = [1,1,3,2,2] 
 
@@ -278,5 +281,22 @@
 #       posicionActual +=1
 
 # print(numeroIguales)
+
+#------------------
+# Versión con for
+#------------------
+
+# listaValores = [1,1,3,2,2] 
+
+# longitudListaValores  = len(listaValores)
+
+# numeroIguales  = 0
+# posicionActual = 1
+
+# for posicionActual in range(longitudListaValores):
+#       if listaValores[posicionActual] == listaValores[posicionActual-1]:
+#           numeroIguales += 1
+# print(numeroIguales)
+
 
 
