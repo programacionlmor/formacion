@@ -146,9 +146,8 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 # Versión 1
 #############
 
-
 # cestaFrutas = {}
-# #frutasPrecioCantidad = {}
+
 
 # controladorCiclo= True
 # while controladorCiclo:
@@ -156,7 +155,7 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 #         precioFruta   = input("Ingrese el precio de la Fruta: ")
 #         cantidadFruta = input("Ingrese la cantidad de Fruta vendida: ")
 
-#         if nombreFruta.isalpha() and precioFruta.isnumeric() and cantidadFruta.isnumeric:
+#         if nombreFruta.isalpha() and precioFruta.isnumeric() and cantidadFruta.isnumeric():
 #            precioFruta   = float(precioFruta)
 #            cantidadFruta = int(cantidadFruta)
            
@@ -173,22 +172,23 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 
 #            respuesta   = input("¿Desea ingresar otra fruta? (s)b: ")
 
-#            if (respuesta.isalpha and respuesta =="s"):
+#            if (respuesta.isalpha() and respuesta =="s"):
 #               None
 #            else:
 #             controladorCiclo = False
            
          
 #         else:
-#             print ("Digite Valores correctos")
+#             print ("Digite Valores correcores")
 #             controladorCiclo = True
+
 
 ##################################################
 # Versión 2  - Diccionario con precios diferentes
 #################################################
 
-# cestaFrutas = {1 : ["mango",1000.0, 10], 2 : ["mora",1200.0, 20], 3 : ["pera",2000.0,8]}
-# frutasPrecioCantidad = {}
+# cestaFrutas = {1 : ["mango",1000.0, 10], 2 : ["mora",9200.0, 20], 3 : ["pera",900.0,8]}
+
 
 # controladorCiclo= True
 # while controladorCiclo:
@@ -196,7 +196,7 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 #         precioFruta   = input("Ingrese el precio de la Fruta: ")
 #         cantidadFruta = input("Ingrese la cantidad de Fruta vendida: ")
 
-#         if nombreFruta.isalpha() and precioFruta.isnumeric() and cantidadFruta.isnumeric:
+#         if nombreFruta.isalpha() and precioFruta.isnumeric() and cantidadFruta.isnumeric():
 #            precioFruta   = float(precioFruta)
 #            cantidadFruta = int(cantidadFruta)
 #            listaFruta    = [nombreFruta,precioFruta,cantidadFruta]         
@@ -205,7 +205,7 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 
 #            respuesta   = input("¿Desea ingresar otra fruta? (s)b: ")
 
-#            if (respuesta.isalpha and respuesta =="s"):
+#            if (respuesta.isalpha() and respuesta =="s"):
 #               None
 #            else:
 #             controladorCiclo = False
@@ -239,8 +239,8 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 ##################################################
 
 
-# cestaFrutas = {1 : ["mango",1000.0, 10], 2 : ["mora",1200.0, 20], 3 : ["pera",2000.0,8], 4 : ["agraz",2000,9], 5: ["naranja",1000.0,8}
-# frutasPrecioCantidad = {}
+#cestaFrutas = {1 : ["mango",1000.0, 10], 2 : ["mora",1200.0, 20], 3 : ["pera",2000.0,8], 4 : ["agraz",2000,9], 5: ["naranja",1000.0,8]}
+
 
 # controladorCiclo= True
 # while controladorCiclo:
@@ -248,7 +248,7 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 #         precioFruta   = input("Ingrese el precio de la Fruta: ")
 #         cantidadFruta = input("Ingrese la cantidad de Fruta vendida: ")
 
-#         if nombreFruta.isalpha() and precioFruta.isnumeric() and cantidadFruta.isnumeric:
+#         if nombreFruta.isalpha() and precioFruta.isnumeric() and cantidadFruta.isnumeric():
 #            precioFruta   = float(precioFruta)
 #            cantidadFruta = int(cantidadFruta)
 #            listaFruta    = [nombreFruta,precioFruta,cantidadFruta]         
@@ -257,7 +257,7 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 
 #            respuesta   = input("¿Desea ingresar otra fruta? (s)b: ")
 
-#            if (respuesta.isalpha and respuesta =="s"):
+#            if (respuesta.isalpha() and respuesta =="s"):
 #               None
 #            else:
 #             controladorCiclo = False
@@ -266,7 +266,6 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 #         else:
 #             print ("Digite Valores correcores")
 #             controladorCiclo = True
-
 
 
 
@@ -287,8 +286,6 @@ alimentos = { 'frutas'    : {' manzanas': [' verdes', ' 7', ' rojas', ' 5'],'uva
 
 # print(f"El producto(s) con mayor  precio  es {listaMayorPrecio} ")
 # print(f"El producto(s) con menor  precio  es {listaMenorPrecio} ")
-# #print(f"El producto(s) con menor  precio  es {listaCestaFrutas[0][0]} ")
-# #print(f"El producto(s) con mayor precio  es {listaCestaFrutas[-1][0]} ")
 
 # sumaPrecio      = 0
 # sumaInventario  = 0
