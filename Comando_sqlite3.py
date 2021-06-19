@@ -7,6 +7,10 @@
      Junio-07-2021          Versión inicial del programa
      
 """
+#########################################################################################
+# Tipos de bases de datos
+# Lectura: https://www.matillion.com/resources/blog/the-types-of-databases-with-examples 
+########################################################################################## 
 
 
 #########################
