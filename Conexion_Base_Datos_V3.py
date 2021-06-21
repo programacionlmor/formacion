@@ -170,7 +170,7 @@
 # ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo = crearCamposInsertar()
 
 # # Crear los botones de crear, consultar y borrar un triángulo
-# botonInsertar = crearBotones()
+# crearBotones()
 
 # # Conectarse a la base de datos
 # conexion,cursor = conectarBD()
