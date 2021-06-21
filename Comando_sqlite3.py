@@ -7,6 +7,7 @@
      Junio-07-2021          Versión inicial del programa
      
 """
+
 #########################################################################################
 # Tipos de bases de datos
 # Lectura: https://www.matillion.com/resources/blog/the-types-of-databases-with-examples 
@@ -30,14 +31,12 @@
 # );
 ##########################################
 
-
 # create table triangulo(
 #     id_triangulo  text primary key,
 #     lado_uno_triangulo Text,
 #     lado_dos_triangulo text,
 #     lado_tres_triangulo text
 # );
-
 
 # ####################################################
 # insertar registro en tabla  de la base de datos
@@ -46,8 +45,8 @@
 # VALUES (value1, value2, value3, ...);
 #########################################################
 
-#  insert into triangulo VALUES ("1","20","30","40");
-
+# insert into triangulo VALUES ("1","20","30","40");
+# insert into triangulo VALUES ("2","60","70","50");
 
 ####################################################
 # consultar registro en tabla de la base de datos
@@ -60,7 +59,7 @@
 ####################################################
 
 # select * from triangulo;
-
+# select id_triangulo from triangulo;
 # select * from triangulo where lado_uno_triangulo ="20";
 
 # ##################################################
@@ -70,12 +69,14 @@
 # WHERE condition;
 #####################################################
 
-#update triangulo set lado_uno_triangulo ="50";
+# update triangulo set lado_dos_triangulo ="20";
+# update triangulo set lado_dos_triangulo ="20" where  id_triangulo=¨2¨
+# update triangulo set lado_uno_triangulo ="90" where  id_triangulo="1";
 
 #################################################
 #  borrar registro en tabla de la base de datos
 #  DELETE FROM table_name WHERE condition;
 ##################################################
 
-#delete from triangulo;
-
+# delete from triangulo;
+# delete from triangulo where id_triangulo=¨1¨ ;
