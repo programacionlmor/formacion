@@ -2,7 +2,7 @@
   Comandos sqlite3
 
   Autor :  Formador
-|
+
   Creación/ Actualización  Observaciones
      Junio-07-2021          Versión inicial del programa
      
@@ -56,11 +56,17 @@
 # SELECT column1, column2, ...
 # FROM table_name
 # WHERE condition;
+#
+# SELECT column1, column2, ...
+# FROM table_name
+# ORDER BY column1, column2, ... ASC|DESC;
+#
 ####################################################
 
 # select * from triangulo;
 # select id_triangulo from triangulo;
 # select * from triangulo where lado_uno_triangulo ="20";
+# select * from triangulo order by id_triangulo DESC;
 
 # ##################################################
 # actualizar registro en tabla de la base de datos
