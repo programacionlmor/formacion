@@ -21,22 +21,21 @@
 # ventanaPrincipal.mainloop()
 
 
-# ###############################
-# # VERSION 1 : Interfaz gráfica
-# ###############################
+########################################################
+# # VERSION 1 : Interfaz gráfica y conectividad con BD
+# ######################################################
 
 # import sqlite3
 # from   tkinter import *
-# from tkinter import Button, Entry, Frame, Label, Scrollbar,Tk,messagebox,Menu, ttk
-# from tkinter.constants import BOTH, BOTTOM, LEFT, RIGHT, TOP, X, YES
+# from   tkinter import Button, Entry, Frame, Label, Scrollbar,Tk,messagebox,Menu, ttk
+# from   tkinter.constants import BOTH, BOTTOM, LEFT, RIGHT, TOP, X, YES
 
+# def crearCamposInsertar(marcoOperaciones)->Entry:
+#     """
+#       Parámetros: Un objeto tipo frame para incluir widgets de entrada y etiquetas.
+#       Retorno   :    Identificadores de variables para obtener los valores de lados de los triángulos.
+#     """
 
-# #############
-# # FUNCIONES #
-# #############
-
-# def crearCamposInsertar():
-   
 #     labelLadoUno      = Label(marcoOperaciones,text="Lado Uno :",font=('arial', 8,"bold"),bg="salmon")
 #     ladoUnoTriangulo  = Entry(marcoOperaciones,width=5)
 #     labelLadoUno.place(x = 65, y = 2)
@@ -54,9 +53,12 @@
 
 #     return  ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo
 
+# def crearBotones(marcoOperaciones)->Button:
+#     """
+#       Parámetros: Un objeto tipo frame para incluir Botones de operaciones.
+#       Retorno   : Identificadores de variables tipo Button, para ejecutar operaciones.
+#     """
 
-
-# def crearBotones():
 #     botonInsertar   = Button(marcoOperaciones,text="Crear Δ ",bg = "white",font=('arial', 8,"bold"),command=insertarTriangulo)    
 #     botonInsertar.place(x = 480, y = 2)
 
@@ -69,12 +71,21 @@
 #     return botonInsertar,botonBorrar,botonConsultar
 
 # def conectarBD():
+#     """
+#       Parámetros : No recibe parámetros.
+#       Retorno    : Identificadores de variables tipo conexión y cursor(para ejecutar sentencias SQL).
+#     """
 #     conexion = sqlite3.connect('C:\database\geometria.db')
 #     cursor   = conexion.cursor()
 #     return conexion,cursor
 
 
 # def insertarTriangulo():
+#     """
+#       Parámetros: No recibe parámetros.
+#       Cuerpo    : Ejecuta la sentencia insert de sql.
+#       Retorno   : None.
+#     """
 #     datos    = ladoUnoTriangulo.get(),ladoDosTriangulo.get(),ladoTresTriangulo.get()
 #     try:
 #           cursor.execute("INSERT INTO triangulo VALUES (NULL,?,?,?)",(datos))
@@ -85,6 +96,12 @@
 
 
 # def consultarTriangulo():
+#     """
+#       Parámetros: No recibe parámetros
+#       Cuerpo    : Ejecuta la sentencia select de sql
+#       Retorno   : None
+#     """
+
 #     registros = tablaConsulta.get_children()
 #     for elemento in registros:
 #         tablaConsulta.delete(elemento)
@@ -98,7 +115,12 @@
 #         messagebox.showwarning('ADVERTENCIA','Su consulta no arrojó resultados')
 
 
-# def mostrarConsulta():
+# def mostrarConsulta()->ttk.Treeview:
+#     """
+#       Parámetros: No recibe parámetros
+#       Retorno   : Un identifador de variable tipo Treeview, para visualizar en el el resultado
+#                   de una consulta SQL
+#     """
 
 #     scrollbarY = Scrollbar(marcoPrincipal, orient=VERTICAL)
     
@@ -125,6 +147,13 @@
 #     return tablaConsulta
 
 # def borrarTriangulo():
+#     """
+#       Parámetros: No recibe parámetros.
+#       Cuerpo    : Ejecuta la sentencia delete de sql.
+#       Retorno   : None.
+#     """
+
+
 #     if messagebox.askyesno(message="Los datos se perderán definitivamente. ¿Desea Continuar",title="Advertencia"):
 #        sql = "DELETE FROM triangulo"
 #        try: 
@@ -138,6 +167,10 @@
 #         pass
 
 # def salirAplicacion():
+#     """
+#       Parámetros: No recibe parámetros.
+#       Retorno   : None.
+#     """
 #     if messagebox.askyesno(message="¿Desea Salir de la Aplicación?",title="Advertencia"):
 #         conexion.close()
 #         ventanaPrincipal.destroy()
@@ -167,10 +200,10 @@
 # marcoOperaciones.pack(fill = X,side=BOTTOM)
 
 # # Crear campos de captura para los lados del triángulo
-# ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo = crearCamposInsertar()
+# ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo = crearCamposInsertar(marcoOperaciones)
 
 # # Crear los botones de crear, consultar y borrar un triángulo
-# crearBotones()
+# crearBotones(marcoOperaciones)
 
 # # Conectarse a la base de datos
 # conexion,cursor = conectarBD()
@@ -187,3 +220,5 @@
 
 # # Mostrar la ventana
 # ventanaPrincipal.mainloop()
+
+
