@@ -1,19 +1,19 @@
 """
-  Interfaz gráfica y Conexión a Base de Datos
+#   Interfaz gráfica y Conexión a Base de Datos
 
-  Autor :  Formador
-|
-  Creación/ Actualización  Observaciones
-     Junio-07-2021          Versión inicial del programa
+#   Autor :  Formador
+# |
+#   Creación/ Actualización  Observaciones
+#      Junio-07-2021          Versión inicial del programa
+#      Junio-20-2021          Ajustes varios
      
-"""
-
 
 ###############################
 # VERSION 0 : Interfaz gráfica
 ###############################
 
 # from tkinter import Tk
+
 # # Crear la ventana Principal
 # ventanaPrincipal = Tk()
 
@@ -21,133 +21,52 @@
 # ventanaPrincipal.mainloop()
 
 
-
-###############################
-# VERSION 1 : Interfaz gráfica
-###############################
-
-# from tkinter import Button, Entry, Label,Tk,messagebox,Menu
-
-
-
-# def crearCampos():
-    
-#     labelNumeroTriangulo = Label(ventanaPrincipal,text="No Triángulo",bg = "cyan")
-#     labelNumeroTriangulo.grid(padx=30,pady=30, column=4,row=0)
-#     idTriangulo        = Entry(ventanaPrincipal,width=20)
-#     idTriangulo.grid(column=5,row=0)
-
-#     labelLadoUno         = Label(ventanaPrincipal,text="Lado Uno",bg = "cyan")
-#     labelLadoUno.grid(padx=30, column=2,row=1)
-#     ladoUnoTriangulo   = Entry(ventanaPrincipal,width=15)
-#     ladoUnoTriangulo.grid(column=3,row=1)
-
-#     labelLadoDos         = Label(ventanaPrincipal,text="Lado Dos",bg = "cyan")
-#     labelLadoDos.grid(padx=30, column=4,row=1)
-#     ladoDosTriangulo   = Entry(ventanaPrincipal,width=15)
-#     ladoDosTriangulo.grid(column=5,row=1)
-
-#     labelLadoTres        = Label(ventanaPrincipal,text="Lado Tres",bg = "cyan")
-#     labelLadoTres.grid(padx=30,column=6,row=1)
-#     ladoTresTriangulo  = Entry(ventanaPrincipal,width=15)
-#     ladoTresTriangulo.grid(column=7,row=1)
-
-#     return idTriangulo, ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo
-
-# def crearBotones():
-#     botonInsertar   = Button(ventanaPrincipal,text="Crear Δ ",bg = "pink")
-#     botonInsertar.grid(pady=50,column=3,row=10)
-#     botonBorrar     = Button(ventanaPrincipal,text="Consultar Δ ",bg = "pink")
-#     botonBorrar.grid(column= 5,row=10)
-#     botonConsultar  = Button(ventanaPrincipal,text="Borrar Δ ",bg = "pink")
-#     botonConsultar.grid(column=7,row=10)
-
-#     return botonInsertar,botonBorrar,botonConsultar
-
-# def salirAplicacion():
-#     if messagebox.askyesno(message="¿Desea Salir de la Aplicación?",title="Advertencia"):
-#        ventanaPrincipal.destroy()
-
-
-
-# # Crear la ventana Principal
-# ventanaPrincipal = Tk()
-# ventanaPrincipal.title("Triángulos")
-# ventanaPrincipal.geometry("800x500")
-
-
-# # Crear campos de captura para el identificador y los lados del triángulo
-# idTriangulo, ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo = crearCampos()
-
-# # Crear los botones de crear, consultar y borrar un triángulo
-# botonInsertar,botonBorrar,botonConsultar = crearBotones()
-
-
-
-# # Crear el menu principal
-# menuBarra = Menu(ventanaPrincipal)
-# menuBarra.add_command(label="Salir", command=salirAplicacion)
-
-
-# # Mostrar el menu
-# ventanaPrincipal.config(menu=menuBarra)
-
-
-# # Mostrar la ventana
-# ventanaPrincipal.mainloop()
-
-
-
-
-
-#############################################
-# VERSION 2 - CONECTIVIDAD CON BASE DE DATOS
-#############################################
-
-
-# from sqlite3.dbapi2 import Cursor
-# from tkinter import Button, Entry, Label, ttk, Tk,messagebox
-# from tkinter import Menu
+# ###############################
+# # VERSION 1 : Interfaz gráfica
+# ###############################
 
 # import sqlite3
+# from   tkinter import *
+# from tkinter import Button, Entry, Frame, Label, Scrollbar,Tk,messagebox,Menu, ttk
+# from tkinter.constants import BOTH, BOTTOM, LEFT, RIGHT, TOP, X, YES
 
 
+# #############
+# # FUNCIONES #
+# #############
 
-# def crearCampos():
-    
-#     labelNumeroTriangulo = Label(ventanaPrincipal,text="No Triángulo",bg = "cyan")
-#     labelNumeroTriangulo.grid(padx=30,pady=30, column=4,row=0)
-#     idTriangulo        = Entry(ventanaPrincipal,width=20)
-#     idTriangulo.grid(column=5,row=0)
+# def crearCamposInsertar():
+   
+#     labelLadoUno      = Label(marcoOperaciones,text="Lado Uno :",font=('arial', 8,"bold"),bg="salmon")
+#     ladoUnoTriangulo  = Entry(marcoOperaciones,width=5)
+#     labelLadoUno.place(x = 65, y = 2)
+#     ladoUnoTriangulo.place(x = 130, y = 2)
 
-#     labelLadoUno         = Label(ventanaPrincipal,text="Lado Uno",bg = "cyan")
-#     labelLadoUno.grid(padx=30, column=2,row=1)
-#     ladoUnoTriangulo   = Entry(ventanaPrincipal,width=15)
-#     ladoUnoTriangulo.grid(column=3,row=1)
+#     labelLadoDos      = Label(marcoOperaciones,text="Lado Dos :",font=('arial', 8,"bold"),bg="salmon")
+#     ladoDosTriangulo  = Entry(marcoOperaciones,width=5)
+#     labelLadoDos.place(x = 170, y = 2)
+#     ladoDosTriangulo.place(x = 235, y = 2)
 
-#     labelLadoDos         = Label(ventanaPrincipal,text="Lado Dos",bg = "cyan")
-#     labelLadoDos.grid(padx=30, column=4,row=1)
-#     ladoDosTriangulo   = Entry(ventanaPrincipal,width=15)
-#     ladoDosTriangulo.grid(column=5,row=1)
+#     labelLadoTres      = Label(marcoOperaciones,text="Lado Tres",font=('arial', 8,"bold"),bg="salmon")
+#     ladoTresTriangulo  = Entry(marcoOperaciones,width=5)
+#     labelLadoTres.place(x = 275, y = 2)
+#     ladoTresTriangulo.place(x = 340, y = 2)
 
-#     labelLadoTres        = Label(ventanaPrincipal,text="Lado Tres",bg = "cyan")
-#     labelLadoTres.grid(padx=30,column=6,row=1)
-#     ladoTresTriangulo  = Entry(ventanaPrincipal,width=15)
-#     ladoTresTriangulo.grid(column=7,row=1)
+#     return  ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo
 
-#     return idTriangulo, ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo
+
 
 # def crearBotones():
-#     botonInsertar   = Button(ventanaPrincipal,text="Crear Δ ",bg="pink",command=insertarTriangulo)
-#     botonInsertar.grid(pady=50,column=3,row=10)
-#     botonBorrar     = Button(ventanaPrincipal,text="Consultar Δ ",bg="pink",command=consultarTriangulo)
-#     botonBorrar.grid(column= 5,row=10)
-#     botonConsultar  = Button(ventanaPrincipal,text="Borrar Δ ",bg = "pink",command=borrarTriangulo)
-#     botonConsultar.grid(column=7,row=10)
+#     botonInsertar   = Button(marcoOperaciones,text="Crear Δ ",bg = "white",font=('arial', 8,"bold"),command=insertarTriangulo)    
+#     botonInsertar.place(x = 480, y = 2)
+
+#     botonBorrar     = Button(marcoOperaciones,text="Borrar Δ ",bg = "white",font=('arial', 8,"bold"),command=borrarTriangulo)
+#     botonBorrar.place(x = 540, y = 2)
+    
+#     botonConsultar  = Button(marcoOperaciones,text="Consultar Δ ",bg = "white",font=('arial', 8,"bold"), command=consultarTriangulo)
+#     botonConsultar.place(x = 600, y = 2)
 
 #     return botonInsertar,botonBorrar,botonConsultar
-
-
 
 # def conectarBD():
 #     conexion = sqlite3.connect('C:\database\geometria.db')
@@ -156,30 +75,14 @@
 
 
 # def insertarTriangulo():
-#     datos    = idTriangulo.get(),ladoUnoTriangulo.get(),ladoDosTriangulo.get(),ladoTresTriangulo.get()
+#     datos    = ladoUnoTriangulo.get(),ladoDosTriangulo.get(),ladoTresTriangulo.get()
 #     try:
-#           cursor.execute("INSERT INTO triangulo VALUES (?,?,?,?)",(datos))
+#           cursor.execute("INSERT INTO triangulo VALUES (NULL,?,?,?)",(datos))
 #           conexion.commit()
 #           messagebox.showinfo('Base de Datos','Triángulo insertado exitosamente')
 #     except: 
 #           messagebox.showwarning('ADVERTENCIA','Fallo en la inserción del triángulo')
 
-
-
-# def borrarTriangulo():
-#     if messagebox.askyesno(message="Los datos se perderán definitivamente. ¿Desea Continuar",title="Advertencia"):
-#        sql = "DELETE FROM triangulo"
-#     else:
-#         pass
-#     try: 
-#      cursor.execute(sql)
-#      conexion.commit()
-#      messagebox.showinfo('Base de Datos','Los triángulos fueron borrados con éxito')
-
-#     except:
-#         messagebox.showwarning('ADVERTENCIA','Fallo borrando triángulos')
-
-#     conexion.close()
 
 # def consultarTriangulo():
 #     registros = tablaConsulta.get_children()
@@ -189,25 +92,50 @@
 #     try:
 #         cursor.execute(sql)
 #         for row in cursor:
-# #            tablaConsulta.insert("",0,text=row[0],values=(row[0],row[1],row[2],row[3]))
-#             tablaConsulta.insert("",'end',text=row[0],values=(row[0],row[1],row[2],row[3]))
+
+#             tablaConsulta.insert("",'end',values=(row[0],row[1],row[2],row[3]))
 #     except:
 #         messagebox.showwarning('ADVERTENCIA','Su consulta no arrojó resultados')
 
-# def actualizarTriangulo():
-#     pass
 
 # def mostrarConsulta():
 
-#     tablaConsulta= ttk.Treeview(height=10,columns=(0,1,2,3),show='headings')
-#     tablaConsulta.heading (0,text ="No")
-#     tablaConsulta.heading (1,text ="Lado Uno")
-#     tablaConsulta.heading (2,text="Lado Dos")
-#     tablaConsulta.heading (3,text="Lado Tres")
-#     tablaConsulta.place(x=0,y=200)
+#     scrollbarY = Scrollbar(marcoPrincipal, orient=VERTICAL)
+    
+#     tablaConsulta = ttk.Treeview(marcoPrincipal, columns=("primeraColumna", "segundaColumna", "terceraColumna","cuartaColumna"), yscrollcommand=scrollbarY.set)
+#     tablaConsulta.heading('primeraColumna', text="Id Δ")
+#     tablaConsulta.heading('segundaColumna', text="1er Lado Δ")
+#     tablaConsulta.heading('terceraColumna', text="2do Lado Δ")
+#     tablaConsulta.heading('cuartaColumna',  text="3er Lado Δ")
+#     tablaConsulta.column('#0',stretch=NO, minwidth=0, width=0)
+#     tablaConsulta.column('#1', width=100, anchor=CENTER)
+#     tablaConsulta.column('#2', width=100, anchor=CENTER)
+#     tablaConsulta.column('#3', width=100, anchor=CENTER)
+#     tablaConsulta.column('#4', width=100, anchor=CENTER)
+    
+#     scrollbarY.config(command=tablaConsulta.yview)
+#     scrollbarY.pack(side=RIGHT, fill=Y)
+
+#     estilo = ttk.Style()
+#     estilo.theme_use('clam')
+#     estilo.configure('Treeview.Heading', background="dark turquoise",font=('arial', 8,"bold"))
+
+#     tablaConsulta.pack(side=LEFT, expand = YES,fill = BOTH)
 
 #     return tablaConsulta
 
+# def borrarTriangulo():
+#     if messagebox.askyesno(message="Los datos se perderán definitivamente. ¿Desea Continuar",title="Advertencia"):
+#        sql = "DELETE FROM triangulo"
+#        try: 
+#         cursor.execute(sql)
+#         conexion.commit()
+#         messagebox.showinfo('Base de Datos','Los triángulos fueron borrados con éxito')
+
+#        except:
+#             messagebox.showwarning('ADVERTENCIA','Fallo borrando triángulos')
+#     else:
+#         pass
 
 # def salirAplicacion():
 #     if messagebox.askyesno(message="¿Desea Salir de la Aplicación?",title="Advertencia"):
@@ -215,35 +143,47 @@
 #         ventanaPrincipal.destroy()
 
 
+# #============================= FIN FUNCIONES ========================================
+
+
 # # Crear la ventana Principal
 # ventanaPrincipal = Tk()
 # ventanaPrincipal.title("Triángulos")
-# ventanaPrincipal.geometry("800x500")
+# ventanaPrincipal.geometry("800x300")
 
+# # Crear el marco Principal
+# marcoPrincipal = Frame(ventanaPrincipal, width=800, height=50, bd=5, bg='pale turquoise',relief='sunken',cursor='spider')
+# marcoPrincipal.pack( expand = YES, fill = BOTH)
 
-# # Crear campos de captura para el identificador y los lados del triángulo
-# idTriangulo, ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo= crearCampos()
+# # Crear el marco de abajo: con el texto Python - Conexión a Base de Datos
+# marcoAbajo = Frame(ventanaPrincipal, width=800, height=50, bd=5, bg='dark turquoise',relief='flat',cursor='heart')
+# marcoAbajo.pack(side=TOP)
+
+# tituloAbajo = Label(marcoAbajo, width=800, font=('arial', 12,"bold"), bg='dark turquoise',text = "Python - Conexión a Base de Datos")
+# tituloAbajo.pack(side=TOP)
+
+# # Crear el marco de operaciones : crear, consultar y borrar un triángulo
+# marcoOperaciones = Frame(marcoPrincipal, width=800, height=30, bd=5, bg='salmon',relief='flat',cursor='heart')
+# marcoOperaciones.pack(fill = X,side=BOTTOM)
+
+# # Crear campos de captura para los lados del triángulo
+# ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo = crearCamposInsertar()
 
 # # Crear los botones de crear, consultar y borrar un triángulo
-# botonInsertar,botonBorrar,botonConsultar= crearBotones()
+# botonInsertar = crearBotones()
 
 # # Conectarse a la base de datos
 # conexion,cursor = conectarBD()
 
-
-# # Crear tabla para la consulta de registros
-# tablaConsulta =mostrarConsulta()
-
-
+# # Crear la estructura para mostrar la consulta 
+# tablaConsulta = mostrarConsulta()
 
 # # Crear el menu principal
 # menuBarra = Menu(ventanaPrincipal)
 # menuBarra.add_command(label="Salir", command=salirAplicacion)
 
-
 # # Mostrar el menu
 # ventanaPrincipal.config(menu=menuBarra)
-
 
 # # Mostrar la ventana
 # ventanaPrincipal.mainloop()
