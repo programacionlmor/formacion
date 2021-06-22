@@ -1,30 +1,14 @@
-"""
-#   Interfaz gráfica y Conexión a Base de Datos
-
-#   Autor :  Formador
-# |
-#   Creación/ Actualización  Observaciones
-#      Junio-07-2021          Versión inicial del programa
-#      Junio-20-2021          Ajustes varios
-     
-
-###############################
-# VERSION 0 : Interfaz gráfica
-###############################
-
-# from tkinter import Tk
-
-# # Crear la ventana Principal
-# ventanaPrincipal = Tk()
-
-# # Mostrar la ventana
-# ventanaPrincipal.mainloop()
-
-
-########################################################
-# # VERSION 1 : Interfaz gráfica y conectividad con BD
 # ######################################################
-
+#   Interfaz gráfica y Conectividad con Base de Datos
+#   Autor :  Formador
+# 
+#   Creación/ Actualización  Observaciones
+#   Junio-07-2021          Versión inicial del programa
+#
+# #######################################################
+# ######################################################
+# # # VERSION 1 : Interfaz gráfica y conectividad con BD
+# # ######################################################
 # import sqlite3
 # from   tkinter import *
 # from   tkinter import Button, Entry, Frame, Label, Scrollbar,Tk,messagebox,Menu, ttk
@@ -53,7 +37,7 @@
 
 #     return  ladoUnoTriangulo,ladoDosTriangulo,ladoTresTriangulo
 
-# def crearBotones(marcoOperaciones)->Button:
+# def crearBotones(marcoOperaciones):
 #     """
 #       Parámetros: Un objeto tipo frame para incluir Botones de operaciones.
 #       Retorno   : Identificadores de variables tipo Button, para ejecutar operaciones.
@@ -68,7 +52,7 @@
 #     botonConsultar  = Button(marcoOperaciones,text="Consultar Δ ",bg = "white",font=('arial', 8,"bold"), command=consultarTriangulo)
 #     botonConsultar.place(x = 600, y = 2)
 
-#     return botonInsertar,botonBorrar,botonConsultar
+
 
 # def conectarBD():
 #     """
@@ -178,7 +162,6 @@
 
 # #============================= FIN FUNCIONES ========================================
 
-
 # # Crear la ventana Principal
 # ventanaPrincipal = Tk()
 # ventanaPrincipal.title("Triángulos")
@@ -220,5 +203,3 @@
 
 # # Mostrar la ventana
 # ventanaPrincipal.mainloop()
-
-
